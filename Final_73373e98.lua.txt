@@ -1,0 +1,1030 @@
+-- [[ SCRIPT REPARADO V79 (SAFE MODE) ]]
+-- [[ ENGINE: FLUXO.PY ]]
+
+local v62, v78, v59, v75, v69, v88, v67, v87, v92, v81, v35, v14, v30, v13, v26, v9, v23, v7, v21, v6, v40, v19, v38, v15, v42, v24, v41, v20, v50, v39, v43, v28, v45, v32, v47, v33, v49, v34, v53, v44, v56, v46, v1, v48, v2, v11, v55, v17, v54, v8, v5, v51, v3, v25, v4, v52
+v62 = loadstring
+v78 = game
+v59 = v78
+v78 = v78.HttpGet
+v75 = "https://lua-library.btteam.net/Library/SystemUI.txt"
+v78 = v78(v59, v75) -- [Fixed Multi-Assign]
+v62 = v62(v78, v59, v75, v69, v88, v67, v87, v92, v81, v35, v14, v30, v13, v26, v9, v23, v7, v21, v6, v40, v19, v38, v15, v42, v24, v41, v20, v50, v39, v43, v28, v45, v32, v47, v33, v49, v34, v53, v44, v56, v46, v1, v48, v2, v11, v55, v17, v54, v8, v5, v51, v3, v25, v4, v52)
+v62 = v62()
+v59 = v62
+v78 = v62.CreateWindow
+v75 = "BT Project"
+v78 = v78(v59, v75)
+v59 = {}
+v69 = v78
+v75 = v78.addTab
+v88 = "#Home"
+v75 = v75(v69, v88)
+v59.Tab_1 = v75
+v69 = v78
+v75 = v78.addTab
+v88 = "#Main"
+v75 = v75(v69, v88)
+v59.Tab_2 = v75
+v75 = v59.Tab_1
+v69 = v75
+v75 = v75.addSection
+v75 = v75(v69)
+v88 = v75
+v69 = v75.addMenu
+v67 = "#Changelog"
+v69 = v69(v88, v67)
+v67 = v69
+v88 = v69.addChangelog
+v87 = "[December, 30 2024]"
+v88(v67, v87)
+v67 = v69
+v88 = v69.addChangelog
+v87 = "- Fixed Auto Parry"
+v88(v67, v87)
+v67 = v69
+v88 = v69.addChangelog
+v87 = "- Fixed Script not Show"
+v88(v67, v87)
+v67 = v69
+v88 = v69.addChangelog
+v87 = "[December, 3 2023]"
+v88(v67, v87)
+v67 = v69
+v88 = v69.addChangelog
+v87 = "- Fixed bug issue"
+v88(v67, v87)
+v67 = v69
+v88 = v69.addChangelog
+v87 = "- Fixed Feature not Show"
+v88(v67, v87)
+v67 = v69
+v88 = v69.addChangelog
+v87 = ""
+v88(v67, v87)
+v67 = v69
+v88 = v69.addChangelog
+v87 = "[October, 15 2023]"
+v88(v67, v87)
+v67 = v69
+v88 = v69.addChangelog
+v87 = "- Bladeball Beta Version Released"
+v88(v67, v87)
+v67 = v69
+v88 = v69.addChangelog
+v87 = "- Auto Parry (Normal)"
+v88(v67, v87)
+v67 = v69
+v88 = v69.addChangelog
+v87 = "- Auto Parry (Walk to ball For Auto)"
+v88(v67, v87)
+v67 = v69
+v88 = v69.addChangelog
+v87 = "- Close Combat Toggle"
+v88(v67, v87)
+v67 = v69
+v88 = v69.addChangelog
+v87 = "- Auto Vote"
+v88(v67, v87)
+v67 = v69
+v88 = v69.addChangelog
+v87 = "- Auto Response Chat"
+v88(v67, v87)
+v88 = v59.Tab_1
+v67 = v88
+v88 = v88.addSection
+v88 = v88(v67)
+v87 = v88
+v67 = v88.addMenu
+v92 = "#Home"
+v67 = v67(v87, v92)
+v87 = getgenv
+v87 = v87()
+v87.WalkSpeedValue = 26
+v92 = v67
+v87 = v67.addTextbox
+v81 = "Speed Hack"
+v35 = getgenv
+v35 = v35()
+v35 = v35.WalkSpeedValue
+function v14(A0_2)
+  local v79, v58, v73, v71
+  v79 = getgenv
+  v79 = v79()
+  v79.WalkSpeedValue = A0_2
+  v79 = getgenv
+  v79 = v79()
+  v79 = v79.WalkSpeedValue
+  if v79 then
+    v79 = game
+    v58 = v79
+    v79 = v79.service
+    v73 = "Players"
+    v79 = v79(v58, v73)
+    v79 = v79.LocalPlayer
+    v58 = v79.Character
+    v58 = v58.Humanoid
+    v73 = v58
+    v58 = v58.GetPropertyChangedSignal
+    v71 = "WalkSpeed"
+    v58 = v58(v73, v71)
+    v73 = v58
+    v58 = v58.Connect
+    function v71()
+      local v63, v80
+      v63 = v79
+      v63 = v63.Character
+      v63 = v63.Humanoid
+      v80 = getgenv
+      v80 = v80()
+      v80 = v80.WalkSpeedValue
+      v63.WalkSpeed = v80
+    end
+    v58(v73, v71)
+    v58 = v79.Character
+    v58 = v58.Humanoid
+    v73 = getgenv
+    v73 = v73()
+    v73 = v73.WalkSpeedValue
+    v58.WalkSpeed = v73
+  end
+end
+v87(v92, v81, v35, v14)
+v87 = getgenv
+v87 = v87()
+v87.JumpValue = 50
+v92 = v67
+v87 = v67.addTextbox
+v81 = "Jump Hack"
+v35 = getgenv
+v35 = v35()
+v35 = v35.JumpValue
+function v14(A0_2)
+  local v79, v58, v73
+  v79 = getgenv
+  v79 = v79()
+  v79.JumpValue = A0_2
+  v79 = getgenv
+  v79 = v79()
+  v79 = v79.JumpValue
+  if v79 then
+    v79 = game
+    v58 = v79
+    v79 = v79.GetService
+    v73 = "Players"
+    v79 = v79(v58, v73)
+    v79 = v79.LocalPlayer
+    v79 = v79.Character
+    v79 = v79.Humanoid
+    v58 = getgenv
+    v58 = v58()
+    v58 = v58.JumpValue
+    v79.JumpPower = v58
+  end
+end
+v87(v92, v81, v35, v14)
+v92 = v67
+v87 = v67.addToggle
+v81 = "Infinite Jump"
+v35 = InfiniteJumpEnabled
+function v14(A0_2)
+  local v79, v58, v73
+  InfiniteJumpEnabled = A0_2
+  v79 = InfiniteJumpEnabled
+  if v79 then
+    v79 = game
+    v58 = v79
+    v79 = v79.GetService
+    v73 = "UserInputService"
+    v79 = v79(v58, v73)
+    v79 = v79.JumpRequest
+    v58 = v79
+    v79 = v79.connect
+    function v73()
+      local v63, v80, v57
+      v63 = game
+      v80 = v63
+      v63 = v63.GetService
+      v57 = "Players"
+      v63 = v63(v80, v57)
+      v63 = v63.LocalPlayer
+      v63 = v63.Character
+      v80 = v63
+      v63 = v63.FindFirstChildOfClass
+      v57 = "Humanoid"
+      v63 = v63(v80, v57)
+      v80 = v63
+      v63 = v63.ChangeState
+      v57 = "Jumping"
+      v63(v80, v57)
+    end
+    v79(v58, v73)
+  end
+end
+v87(v92, v81, v35, v14)
+v92 = v67
+v87 = v67.addToggle
+v81 = "No Clip"
+v35 = getgenv
+v35 = v35()
+v35 = v35.NoClip
+function v14(A0_2)
+  local v79
+  v79 = getgenv
+  v79 = v79()
+  v79.NoClip = A0_2
+end
+v87(v92, v81, v35, v14)
+v87 = spawn
+function v92()
+  local v64, v79
+  v64 = pcall
+  function v79()
+    local v63, v80, v57
+    v63 = game
+    v80 = v63
+    v63 = v63.GetService
+    v57 = "RunService"
+    v63 = v63(v80, v57)
+    v63 = v63.Stepped
+    v80 = v63
+    v63 = v63.Connect
+    function v57()
+      local v61, v77, v60, v76, v72, v91, v65, v85
+      v61 = getgenv
+      v61 = v61()
+      v61 = v61.NoClip
+      if v61 then
+        v61 = pairs
+        v77 = game
+        v60 = v77
+        v77 = v77.GetService
+        v76 = "Players"
+        v77 = v77(v60, v76)
+        v77 = v77.LocalPlayer
+        v77 = v77.Character
+        v60 = v77
+        v77 = v77.GetDescendants
+        v77 = v77(v60) -- [Fixed Multi-Assign]
+        v61, v77, v60 = v61(v77, v60, v76, v72, v91, v65, v85)
+        for v76, v72 in v61, v77, v60 do
+          v65 = v72
+          v91 = v72.IsA
+          v85 = "BasePart"
+          v91 = v91(v65, v85)
+          if v91 then
+            v72.CanCollide = false
+          end
+        end
+      end
+    end
+    v63(v80, v57)
+  end
+  v64(v79)
+end
+v87(v92)
+v87 = getgenv
+v87 = v87()
+v87.AntiAFK = true
+v92 = v67
+v87 = v67.addToggle
+v81 = "Anti AFK"
+v35 = getgenv
+v35 = v35()
+v35 = v35.AntiAFK
+function v14(A0_2)
+  local v79
+  v79 = getgenv
+  v79 = v79()
+  v79.AntiAFK = A0_2
+end
+v87(v92, v81, v35, v14)
+v87 = task
+v87 = v87.spawn
+function v92()
+  local v64, v79, v58, v73
+  while true do
+    v64 = wait
+    v79 = 0.1
+    v64 = v64(v79)
+    if not v64 then
+      break
+    end
+    v64 = getgenv
+    v64 = v64()
+    v64 = v64.AntiAFK
+    if v64 then
+      v64 = game
+      v79 = v64
+      v64 = v64.GetService
+      v58 = "VirtualUser"
+      v64 = v64(v79, v58)
+      v79 = game
+      v58 = v79
+      v79 = v79.GetService
+      v73 = "Players"
+      v79 = v79(v58, v73)
+      v79 = v79.LocalPlayer
+      v79 = v79.Idled
+      v58 = v79
+      v79 = v79.connect
+      function v73()
+        local v63, v80, v57, v74, v70
+        v63 = v64
+        v80 = v63
+        v63 = v63.Button2Down
+        v57 = Vector2
+        v57 = v57.new
+        v74 = 0
+        v70 = 0
+        v57 = v57(v74, v70)
+        v74 = workspace
+        v74 = v74.CurrentCamera
+        v74 = v74.CFrame
+        v63(v80, v57, v74)
+        v63 = wait
+        v80 = 1
+        v63(v80)
+        v63 = v64
+        v80 = v63
+        v63 = v63.Button2Up
+        v57 = Vector2
+        v57 = v57.new
+        v74 = 0
+        v70 = 0
+        v57 = v57(v74, v70)
+        v74 = workspace
+        v74 = v74.CurrentCamera
+        v74 = v74.CFrame
+        v63(v80, v57, v74)
+      end
+      v79(v58, v73)
+    end
+  end
+end
+v87(v92)
+v92 = v67
+v87 = v67.addButton
+v81 = "FPS Boost"
+function v35()
+  local v64, v79, v58, v73, v71, v89, v66, v84, v94, v82, v37, v16, v31
+  v64 = false
+  v79 = game
+  v58 = v79.Workspace
+  v73 = v79.Lighting
+  v71 = v58.Terrain
+  v71.WaterWaveSize = 0
+  v71.WaterWaveSpeed = 0
+  v71.WaterReflectance = 0
+  v71.WaterTransparency = 0
+  v73.GlobalShadows = false
+  v73.FogEnd = 9000000000
+  v73.Brightness = 0
+  v89 = settings
+  v89 = v89()
+  v89 = v89.Rendering
+  v89.QualityLevel = "Level01"
+  v89 = pairs
+  v84 = v79
+  v66 = v79.GetDescendants
+  v66 = v66(v84) -- [Fixed Multi-Assign]
+  v89, v66, v84 = v89(v66, v84, v94, v82, v37, v16, v31)
+  for v94, v82 in v89, v66, v84 do
+    v16 = v82
+    v37 = v82.IsA
+    v31 = "Part"
+    v37 = v37(v16, v31)
+    if not v37 then
+      v16 = v82
+      v37 = v82.IsA
+      v31 = "Union"
+      v37 = v37(v16, v31)
+      if not v37 then
+        v16 = v82
+        v37 = v82.IsA
+        v31 = "CornerWedgePart"
+        v37 = v37(v16, v31)
+        if not v37 then
+          v16 = v82
+          v37 = v82.IsA
+          v31 = "TrussPart"
+          v37 = v37(v16, v31)
+          if not v37 then
+            goto lbl_45
+          end
+        end
+      end
+    end
+    v82.Material = "Plastic"
+    v82.Reflectance = 0
+    goto lbl_113
+    ::lbl_45::
+    v16 = v82
+    v37 = v82.IsA
+    v31 = "Decal"
+    v37 = v37(v16, v31)
+    if not v37 then
+      v16 = v82
+      v37 = v82.IsA
+      v31 = "Texture"
+      v37 = v37(v16, v31)
+      if not (v37 and v64) then
+        goto lbl_59
+      end
+    end
+    v82.Transparency = 1
+    goto lbl_113
+    ::lbl_59::
+    v16 = v82
+    v37 = v82.IsA
+    v31 = "ParticleEmitter"
+    v37 = v37(v16, v31)
+    if not v37 then
+      v16 = v82
+      v37 = v82.IsA
+      v31 = "Trail"
+      v37 = v37(v16, v31)
+      if not v37 then
+        goto lbl_75
+      end
+    end
+    v37 = NumberRange
+    v37 = v37.new
+    v16 = 0
+    v37 = v37(v16)
+    v82.Lifetime = v37
+    goto lbl_113
+    ::lbl_75::
+    v16 = v82
+    v37 = v82.IsA
+    v31 = "Explosion"
+    v37 = v37(v16, v31)
+    if v37 then
+      v82.BlastPressure = 1
+      v82.BlastRadius = 1
+    else
+      v16 = v82
+      v37 = v82.IsA
+      v31 = "Fire"
+      v37 = v37(v16, v31)
+      if not v37 then
+        v16 = v82
+        v37 = v82.IsA
+        v31 = "SpotLight"
+        v37 = v37(v16, v31)
+        if not v37 then
+          v16 = v82
+          v37 = v82.IsA
+          v31 = "Smoke"
+          v37 = v37(v16, v31)
+          if not v37 then
+            v16 = v82
+            v37 = v82.IsA
+            v31 = "Sparkles"
+            v37 = v37(v16, v31)
+            if not v37 then
+              goto lbl_105
+            end
+          end
+        end
+      end
+      v82.Enabled = false
+      goto lbl_113
+      ::lbl_105::
+      v16 = v82
+      v37 = v82.IsA
+      v31 = "MeshPart"
+      v37 = v37(v16, v31)
+      if v37 then
+        v82.Material = "Plastic"
+        v82.Reflectance = 0
+        v82.TextureID = 10385902758728956
+      end
+    end
+    ::lbl_113::
+  end
+  v89 = pairs
+  v84 = v73
+  v66 = v73.GetChildren
+  v66 = v66(v84) -- [Fixed Multi-Assign]
+  v89, v66, v84 = v89(v66, v84, v94, v82, v37, v16, v31)
+  for v94, v82 in v89, v66, v84 do
+    v16 = v82
+    v37 = v82.IsA
+    v31 = "BlurEffect"
+    v37 = v37(v16, v31)
+    if not v37 then
+      v16 = v82
+      v37 = v82.IsA
+      v31 = "SunRaysEffect"
+      v37 = v37(v16, v31)
+      if not v37 then
+        v16 = v82
+        v37 = v82.IsA
+        v31 = "ColorCorrectionEffect"
+        v37 = v37(v16, v31)
+        if not v37 then
+          v16 = v82
+          v37 = v82.IsA
+          v31 = "BloomEffect"
+          v37 = v37(v16, v31)
+          if not v37 then
+            v16 = v82
+            v37 = v82.IsA
+            v31 = "DepthOfFieldEffect"
+            v37 = v37(v16, v31)
+            if not v37 then
+              goto lbl_146
+            end
+          end
+        end
+      end
+    end
+    v82.Enabled = false
+    ::lbl_146::
+  end
+end
+v87(v92, v81, v35)
+v92 = v67
+v87 = v67.addButton
+v81 = "Rejoin Server"
+function v35()
+  local v64, v79, v58, v73, v71, v89
+  v64 = game
+  v79 = v64
+  v64 = v64.GetService
+  v58 = "TeleportService"
+  v64 = v64(v79, v58)
+  v79 = v64
+  v64 = v64.Teleport
+  v58 = game
+  v58 = v58.PlaceId
+  v73 = game
+  v71 = v73
+  v73 = v73.GetService
+  v89 = "Players"
+  v73 = v73(v71, v89)
+  v73 = v73.LocalPlayer
+  v64(v79, v58, v73)
+end
+v87(v92, v81, v35)
+v92 = v67
+v87 = v67.addButton
+v81 = "Server Hop"
+function v35()
+  local v64
+  v64 = Hop
+  v64()
+end
+v87(v92, v81, v35)
+function v87()
+  local v64, v79, v58, v73, v71, v89
+  v64 = game
+  v64 = v64.PlaceId
+  v79 = {}
+  v58 = ""
+  v73 = os
+  v73 = v73.date
+  v71 = "!*t"
+  v73 = v73(v71)
+  v73 = v73.hour
+  v71 = false
+  function v89()
+    local v63, v80, v57, v74, v70, v90, v68, v86, v93, v83, v36, v18, v29, v12, v27, v10, v22
+    v80 = v58
+    if v80 == "" then
+      v80 = game
+      v80 = v80.HttpService
+      v57 = v80
+      v80 = v80.JSONDecode
+      v74 = game
+      v70 = v74
+      v74 = v74.HttpGet
+      v90 = "https://games.roblox.com/v1/games/"
+      v68 = v64
+      v86 = "/servers/Public?sortOrder=Asc&limit=100"
+      v90 = v90 .. v68 .. v86
+      v74 = v74(v70, v90) -- [Fixed Multi-Assign]
+      v80 = v80(v57, v74, v70, v90, v68, v86, v93, v83, v36, v18, v29, v12, v27, v10, v22)
+      v63 = v80
+    else
+      v80 = game
+      v80 = v80.HttpService
+      v57 = v80
+      v80 = v80.JSONDecode
+      v74 = game
+      v70 = v74
+      v74 = v74.HttpGet
+      v90 = "https://games.roblox.com/v1/games/"
+      v68 = v64
+      v86 = "/servers/Public?sortOrder=Asc&limit=100&cursor="
+      v93 = v58
+      v90 = v90 .. v68 .. v86 .. v93
+      v74 = v74(v70, v90) -- [Fixed Multi-Assign]
+      v80 = v80(v57, v74, v70, v90, v68, v86, v93, v83, v36, v18, v29, v12, v27, v10, v22)
+      v63 = v80
+    end
+    v80 = ""
+    v57 = v63.nextPageCursor
+    if v57 then
+      v57 = v63.nextPageCursor
+      if v57 ~= "null" then
+        v57 = v63.nextPageCursor
+        if v57 ~= nil then
+          v57 = v63.nextPageCursor
+          v58 = v57
+        end
+      end
+    end
+    v57 = 0
+    v74 = pairs
+    v70 = v63.data
+    v74, v70, v90 = v74(v70)
+    for v68, v86 in v74, v70, v90 do
+      v93 = true
+      v83 = tostring
+      v36 = v86.id
+      v83 = v83(v36)
+      v80 = v83
+      v83 = tonumber
+      v36 = v86.maxPlayers
+      v83 = v83(v36)
+      v36 = tonumber
+      v18 = v86.playing
+      v36 = v36(v18)
+      if v83 > v36 then
+        v83 = pairs
+        v36 = v79
+        v83, v36, v18 = v83(v36)
+        for v29, v12 in v83, v36, v18 do
+          if v57 ~= 0 then
+            v27 = tostring
+            v10 = v12
+            v27 = v27(v10)
+            if v80 == v27 then
+              v93 = false
+            end
+          else
+            v27 = tonumber
+            v10 = v73
+            v27 = v27(v10)
+            v10 = tonumber
+            v22 = v12
+            v10 = v10(v22)
+            if v27 ~= v10 then
+              v27 = pcall
+              function v10()
+                local v61, v77, v60
+                v61 = {}
+                v79 = v61
+                v61 = table
+                v61 = v61.insert
+                v77 = v79
+                v60 = v73
+                v61(v77, v60)
+              end
+              v27 = v27(v10)
+            end
+          end
+          v57 = v57 + 1
+        end
+        if v93 == true then
+          v83 = table
+          v83 = v83.insert
+          v36 = v79
+          v18 = v80
+          v83(v36, v18)
+          v83 = wait
+          v36 = 0.1
+          v83(v36)
+          v83 = pcall
+          function v36()
+            local v61, v77, v60, v76, v72
+            v61 = wait
+            v61()
+            v61 = game
+            v77 = v61
+            v61 = v61.GetService
+            v60 = "TeleportService"
+            v61 = v61(v77, v60)
+            v77 = v61
+            v61 = v61.TeleportToPlaceInstance
+            v60 = v64
+            v76 = v80
+            v72 = game
+            v72 = v72.Players
+            v72 = v72.LocalPlayer
+            v61(v77, v60, v76, v72)
+          end
+          v83(v36)
+          v83 = wait
+          v36 = 0.1
+          v83(v36)
+        end
+      end
+    end
+  end
+  TPReturner = v89
+  function v89()
+    local v63, v80
+    while true do
+      v63 = wait
+      v80 = 0.1
+      v63 = v63(v80)
+      if not v63 then
+        break
+      end
+      v63 = pcall
+      function v80()
+        local v61, v77
+        v61 = TPReturner
+        v61()
+        v61 = v58
+        if v61 ~= "" then
+          v61 = TPReturner
+          v61()
+        end
+      end
+      v63(v80)
+    end
+  end
+  Teleport = v89
+  v89 = Teleport
+  v89()
+end
+Hop = v87
+v92 = v67
+v87 = v67.addButton
+v81 = "Teleport To Lower Server"
+function v35()
+  local v64, v79, v58, v73, v71, v89, v66, v84, v94
+  v64 = math
+  v64 = v64.huge
+  v79 = "https://games.roblox.com/v1/games/"
+  v58 = game
+  v58 = v58.PlaceId
+  v73 = "/servers/Public?sortOrder=Asc&limit=100"
+  v79 = v79 .. v58 .. v73
+  v58 = nil
+  v73 = nil
+  v71 = _G
+  v71 = v71.FailedServerID
+  if not v71 then
+    v71 = _G
+    v89 = {}
+    v71.FailedServerID = v89
+  end
+  function v71()
+    local v63, v80, v57, v74, v70, v90, v68
+    v63 = game
+    v80 = v63
+    v63 = v63.GetService
+    v57 = "HttpService"
+    v63 = v63(v80, v57)
+    v80 = v63
+    v63 = v63.JSONDecode
+    v57 = game
+    v74 = v57
+    v57 = v57.HttpGetAsync
+    v70 = v79
+    v57 = v57(v74, v70) -- [Fixed Multi-Assign]
+    v63 = v63(v80, v57, v74, v70, v90, v68)
+    v73 = v63
+    v63 = pairs
+    v80 = v73
+    v80 = v80.data
+    v63, v80, v57 = v63(v80)
+    for v74, v70 in v63, v80, v57 do
+      v90 = pcall
+      function v68()
+        local v61, v77, v60
+        v61 = type
+        v77 = v70
+        v61 = v61(v77)
+        if v61 == "table" then
+          v61 = v70
+          v61 = v61.id
+          if v61 then
+            v61 = v70
+            v61 = v61.playing
+            if v61 then
+              v61 = tonumber
+              v77 = v64
+              v61 = v61(v77)
+              v77 = tonumber
+              v60 = v70
+              v60 = v60.playing
+              v77 = v77(v60)
+              if v61 > v77 then
+                v61 = table
+                v61 = v61.find
+                v77 = _G
+                v77 = v77.FailedServerID
+                v60 = v70
+                v60 = v60.id
+                v61 = v61(v77, v60)
+                if not v61 then
+                  v61 = v70
+                  v61 = v61.playing
+                  v64 = v61
+                  v61 = v70
+                  v61 = v61.id
+                  v58 = v61
+                end
+              end
+            end
+          end
+        end
+      end
+      v90(v68)
+    end
+  end
+  function v89()
+    local v63, v80, v57, v74, v70, v90, v68, v86, v93, v83, v36
+    v63 = pcall
+    v80 = v71
+    v63(v80)
+    v63 = pairs
+    v80 = v73
+    v63, v80, v57 = v63(v80)
+    for v74, v70 in v63, v80, v57 do
+      if v74 == "nextPageCursor" then
+        v90 = v79
+        v68 = v90
+        v90 = v90.find
+        v86 = "&cursor="
+        v90 = v90(v68, v86)
+        if v90 then
+          v90 = v79
+          v68 = v90
+          v90 = v90.find
+          v86 = "&cursor="
+          v90 = v90(v68, v86)
+          v68 = v79
+          v86 = v68
+          v68 = v68.sub
+          v93 = v90
+          v68 = v68(v86, v93)
+          v86 = v79
+          v93 = v86
+          v86 = v86.gsub
+          v83 = v68
+          v36 = ""
+          v86 = v86(v93, v83, v36)
+          v79 = v86
+        end
+        v90 = v79
+        v68 = "&cursor="
+        v86 = v70
+        v90 = v90 .. v68 .. v86
+        v79 = v90
+        v90 = pcall
+        v68 = getservers
+        v90(v68)
+      end
+    end
+  end
+  getservers = v89
+  v89 = pcall
+  v66 = getservers
+  v89(v66)
+  v89 = wait
+  v66 = 0.1
+  v89(v66)
+  v89 = game
+  v89 = v89.JobId
+  if v58 ~= v89 then
+    v89 = game
+    v66 = v89
+    v89 = v89.GetService
+    v84 = "Players"
+    v89 = v89(v66, v84)
+    v66 = v89
+    v89 = v89.GetChildren
+    v89 = v89(v66)
+    v89 = #v89
+    v89 = v89 - 1
+    if v64 == v89 then
+    end
+  end
+  v89 = table
+  v89 = v89.insert
+  v66 = _G
+  v66 = v66.FailedServerID
+  v84 = v58
+  v89(v66, v84)
+  v89 = game
+  v66 = v89
+  v89 = v89.GetService
+  v84 = "TeleportService"
+  v89 = v89(v66, v84)
+  v66 = v89
+  v89 = v89.TeleportToPlaceInstance
+  v84 = game
+  v84 = v84.PlaceId
+  v94 = v58
+  v89(v66, v84, v94)
+  while true do
+    v89 = wait
+    v66 = 0.1
+    v89 = v89(v66)
+    if not v89 then
+      break
+    end
+    v89 = pcall
+    function v66()
+      local v63, v80, v57
+      v63 = game
+      v80 = v63
+      v63 = v63.IsLoaded
+      v63 = v63(v80)
+      if not v63 then
+        v63 = game
+        v63 = v63.Loaded
+        v80 = v63
+        v63 = v63.Wait
+        v63(v80)
+      end
+      v63 = game
+      v63 = v63.CoreGui
+      v63 = v63.RobloxPromptGui
+      v63 = v63.promptOverlay
+      v63 = v63.DescendantAdded
+      v80 = v63
+      v63 = v63.Connect
+      function v57()
+        local v61, v77, v60, v76, v72, v91
+        v61 = game
+        v61 = v61.CoreGui
+        v61 = v61.RobloxPromptGui
+        v61 = v61.promptOverlay
+        v77 = v61
+        v61 = v61.FindFirstChild
+        v60 = "ErrorPrompt"
+        v61 = v61(v77, v60)
+        if v61 then
+          v77 = v61.TitleFrame
+          v77 = v77.ErrorTitle
+          v77 = v77.Text
+          if v77 == "Disconnected" then
+            v77 = game
+            v77 = v77.Players
+            v60 = v77
+            v77 = v77.GetPlayers
+            v77 = v77(v60)
+            v77 = #v77
+            if v77 <= 1 then
+              v77 = game
+              v77 = v77.Players
+              v77 = v77.LocalPlayer
+              v60 = v77
+              v77 = v77.Kick
+              v76 = [[
+
+Rejoining...]]
+              v77(v60, v76)
+              v77 = wait
+              v60 = 0.1
+              v77(v60)
+              v77 = game
+              v60 = v77
+              v77 = v77.GetService
+              v76 = "TeleportService"
+              v77 = v77(v60, v76)
+              v60 = v77
+              v77 = v77.Teleport
+              v76 = game
+              v76 = v76.PlaceId
+              v72 = game
+              v72 = v72.Players
+              v72 = v72.LocalPlayer
+              v77(v60, v76, v72)
+            else
+              v77 = game
+              v60 = v77
+              v77 = v77.GetService
+              v76 = "TeleportService"
+              v77 = v77(v60, v76)
+              v60 = v77
+              v77 = v77.TeleportToPlaceInstance
+              v76 = game
+              v76 = v76.PlaceId
+              v72 = game
+              v72 = v72.JobId
+              v91 = game
+              v91 = v91.Players
+              v91 = v91.LocalPlayer
+              v77(v60, v76, v72, v91)
+            end
+          end
+        end
+      end
+      v63(v80, v57)
+    end
+    v89(v66)
+  end
+end
+v87(v92, v81, v35)
+v92 = v67
+v87 = v67.addButton
+v81 = "Destroy GUI"
+function v35()
